@@ -1,0 +1,136 @@
+/* image navbar css */
+    .container-fluid .navbar-brand img{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+/* end image navbar css */
+
+/* Navbar text color */
+    .navbar .navbar-nav .nav-link {
+        color: white;  /* Sets the text color of the links inside the navbar to white */
+    }
+
+    .navbar .navbar-brand {
+        color: white;  /* Sets the text color of the brand (usually a logo or site name) to white */
+    }
+/* end nabvar text color */
+
+
+
+/* Styles for the left-side navbar */
+    .sidenav {
+        width: 250px; 
+        height: 100vh; /* Make it full height of the viewport */
+        position: fixed; /* Fixed position */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        background-color: #333; /* Dark background color */
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+        padding-top: 20px; /* Add some padding at the top */
+        font-family: Arial, sans-serif; /* Choose your preferred font */
+    }
+
+    .sidenav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidenav ul li {
+        margin-bottom: 10px; /* Space between each navbar item */
+        margin-top: 20px;
+    }
+
+    .sidenav ul li a {
+        display: block;
+        padding: 10px 20px; /* Padding for each link */
+        color: #fff; /* Text color */
+        text-decoration: none;
+        /* transition: background-color 0.3s;  */
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        transition: 0.3s;
+    }
+
+    .sidenav ul li a:hover,
+    .sidenav ul li a.active {
+        background-color: rgba(255, 255, 255, 0.1); /* Background color on hover/active */
+        border-left: 3px solid #007bff; /* Left border color for active/hover items */
+    }
+
+    /* Icons styling */
+    .sidenav ul li a i {
+        margin-right: 10px; /* Space between icon and text */
+    }
+
+    /* Active link styling */
+    .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.2); /* Adjust as needed */
+        border-left: 3px solid #007bff; /* Left border color for active items */
+    }
+
+    /* Responsive adjustments for mobile */
+    @media (max-width: 768px) {
+    .sidenav {
+        width: 45px; 
+        padding-top: 10px; 
+        position: fixed;
+    }
+
+    .sidenav ul li a {
+        padding: 8px 15px;
+    }
+
+    .sidenav ul li a i {
+        margin-right: 8px; 
+    }
+    }
+/* end of navbar */
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .navbutton{
+    position: fixed;
+    left: 1rem;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
